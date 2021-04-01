@@ -1,0 +1,29 @@
+; ----------------------------------------------------------------------
+; Module ASPIDLL.DEF
+; Definition file for ASPI Dynamic Link Library.
+;
+; Copyright (C) 1993, Brian Sawert.
+; All rights reserved.
+;
+; ----------------------------------------------------------------------
+
+LIBRARY			ASPIDLL
+
+DESCRIPTION		'DLL for ASPI under Windows'
+EXETYPE			WINDOWS
+CODE			PRELOAD MOVEABLE DISCARDABLE
+DATA			PRELOAD MOVEABLE SINGLE
+HEAPSIZE		1024
+
+EXPORTS
+			aspi_open
+			aspi_close
+			aspi_host_inq
+			aspi_devtype
+			aspi_io
+			aspi_abort_io
+			aspi_reset_dev
+			aspi_set_hostprm
+			aspi_get_driveprm
+			aspi_sense
+
